@@ -3,23 +3,24 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
-    const [visible, setVisible] = useState(false);
-    const handleMouseOver = () => {
-        setVisible(true);
+    const [visible, setVisible] = useState("");
+    const handleMouseOver = (link) => {
+        setVisible(link);
     };
 
     const handleMouseOut = () => {
-        setVisible(false);
+        setVisible("");
     };
 
     return (
         <NavBarWrapper>
             <TitleText>r-kyv</TitleText>
             <div>
-                <Link to="/works" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>works</Link>
-                <Link to="/info">info</Link>
+                <Link to="/works" onMouseOver={() => handleMouseOver("works")} onMouseOut={handleMouseOut}>works</Link>
+                <Link to="/info" onMouseOver={() => handleMouseOver("info")} onMouseOut={handleMouseOut}>info</Link>
             </div>
-            {!visible && <HoverEffectWrapper>WORKS</HoverEffectWrapper>}
+            {visible=="works" && <HoverEffectWrapper>WORKS</HoverEffectWrapper>}
+            {visible=="info" && <HoverEffectWrapper>INFORMATION</HoverEffectWrapper>}
         </NavBarWrapper>
     )
 }
@@ -38,8 +39,6 @@ const Link = styled(NavLink)`
     font-family: "NanumSquareNeo-EB";
     padding-left: 3vw;
     font-size: 2em;
-
-    
 `
 
 const TitleText = styled.h1`
@@ -48,12 +47,11 @@ const TitleText = styled.h1`
 `
 
 const HoverEffectWrapper = styled.h1`
-    height: 100vh;
-    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
+    font-size: 13vw;
+    position: fixed;
     font-family: "NanumSquareNeo-H";
-    font-size: 20vw;
     color: rgba(0,0,255,0.8)
 `
