@@ -5,6 +5,10 @@ html {
 
 body {
     margin: 0;
+    font-family: "NanumSquareNeo-R";
+    color: #F55B39;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 ::-webkit-scrollbar {

@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import './css/style.css'
-import Root from "./pages/root"
+import './css/fonts.css'
+import Root from './pages/root-page';
 import ErrorPage from './pages/error-page';
+import InfoPage from './pages/info-page';
+import HomePage from './pages/home-page';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />
+      },
+      {
+        path: "/info",
+        element: <InfoPage />
+      },
+      {
+        path: "/hello",
+        element: <p>hello</p>
+      }
+    ]
   },
 ]);
 

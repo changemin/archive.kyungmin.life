@@ -1,10 +1,9 @@
 import NavBar from "../components/NavBar"
 import CircleCursor from "../components/CircleCursor"
 
-export default function Root() {
+export default function RootPage() {
     return (
         <>
-            <p>root</p>
             <NavBar />
             <CircleCursor />
         </>

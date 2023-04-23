@@ -37,12 +37,13 @@ const CursorWrapper = styled.div`
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: -1;
 `
 
 const BlurCircle = styled.div`
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: rgba(0,0,255, 0.8);
     border-radius: 50%;
     transform: translate(-50%, -50%);
