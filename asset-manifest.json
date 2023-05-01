@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a3582feb.css",
-    "main.js": "./static/js/main.a4f3a7c9.js",
+    "main.js": "./static/js/main.89a8f4aa.js",
     "static/js/787.62d05ba6.chunk.js": "./static/js/787.62d05ba6.chunk.js",
     "static/media/NanumSquareNeo-Variable.woff": "./static/media/NanumSquareNeo-Variable.d80ae48b60611b9cbb57.woff",
     "static/media/NanumSquareNeo-Variable.woff2": "./static/media/NanumSquareNeo-Variable.1ec64c4f932f64914ebd.woff2",
@@ -18,11 +18,11 @@
     "static/media/DS-Digital.woff": "./static/media/DS-Digital.82b522b8613e2bec4b09.woff",
     "index.html": "./index.html",
     "main.a3582feb.css.map": "./static/css/main.a3582feb.css.map",
-    "main.a4f3a7c9.js.map": "./static/js/main.a4f3a7c9.js.map",
+    "main.89a8f4aa.js.map": "./static/js/main.89a8f4aa.js.map",
     "787.62d05ba6.chunk.js.map": "./static/js/787.62d05ba6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3582feb.css",
-    "static/js/main.a4f3a7c9.js"
+    "static/js/main.89a8f4aa.js"
   ]
 }
